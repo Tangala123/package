@@ -14,8 +14,20 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+     <dependency>
+         <groupId>org.apache.poi</groupId>
+         <artifactId>poi</artifactId>
+         <version>5.2.3</version>
+    </dependency>
   </dependencies>
   <build>
-    <finalName>package</finalName>
-  </build>
-</project>
+   <plugins>
+     <plugin>
+       <groupId>org.apache.maven.plugins</groupId>
+       <artifactId>maven-war-plugin</artifactId>
+       <version>3.3.1</version>
+     </plugin>
+  </plugins>
+ <finalName>package</finalName>
+</build>
+</project>                                     
