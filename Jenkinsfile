@@ -12,7 +12,7 @@ pipeline {
         stage ('Git checkout') {
            when {
                 expression {
-                    params.branchName == "develop"
+                    params.branchName == "Dev"
                 }
             }    
             steps {
@@ -23,7 +23,7 @@ pipeline {
          stage('Maven Build') {
               when {
                 expression {
-                    params.branchName == "develop"
+                    params.branchName == "Dev"
                 }
             }    
             steps {
@@ -33,7 +33,7 @@ pipeline {
         stage('Dev Deploy') {
              when {
                 expression {
-                    params.branchName == "develop"
+                    params.branchName == "Dev"
                 }
             }    
             steps {
