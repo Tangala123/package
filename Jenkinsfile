@@ -30,4 +30,13 @@ pipeline {
             }
         }
     }
+    post {
+     success {
+          echo " This job should run when it success "
+     }
+      failure {
+          echo " This job should run when it fails "
+     }
+   }
+
 }
