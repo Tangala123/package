@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage ('Git checkout') {
             steps {
-                 git branch: "${params.brancName}", credentialsId: 'git-creds', url: 'https://github.com/Tangala123/package'
+                 git branch: "${params.branchName}", credentialsId: 'git-creds', url: 'https://github.com/Tangala123/package'
             }
         }
            
